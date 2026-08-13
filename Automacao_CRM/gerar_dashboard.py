@@ -17,8 +17,9 @@ os.makedirs(PASTA_SAIDA, exist_ok=True)
 
 NOME_DO_TEMPLATE_HTML = "relatorio_template.html"
 
-# Inicializa as ferramentas
-client = genai.Client(api_key="AQ.Ab8RN6Kic6dUckARom3yVrgluKAfAh9NAgmdYbg2M2d0Q9BzLQ")
+# Inicializa as ferramentas (COLOQUE SUA CHAVE AQUI APENAS NA HORA DE RODAR)
+# Lembre-se de apagar a chave antes de mandar pro GitHub!
+client = genai.Client(api_key="COLOQUE_SUA_CHAVE_AQUI_PARA_RODAR")  
 env = Environment(loader=FileSystemLoader('Automacao_CRM'))
 template = env.get_template(NOME_DO_TEMPLATE_HTML)
 
